@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "🛡️ Run Streamlit Web App",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "streamlit",
+            "args": [
+                "run",
+                "${workspaceFolder}/app.py",
+                "--server.port",
+                "8501"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "🧠 Run Model Training Pipeline",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.train",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "⚡ Run Inference Test",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.inference",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
