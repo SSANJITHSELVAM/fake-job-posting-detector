@@ -9,3 +9,4 @@ shap>=0.45
 bcrypt>=4.1
 pyarrow>=14.0
 matplotlib>=3.8
+plotly
